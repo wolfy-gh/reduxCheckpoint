@@ -31,7 +31,6 @@ function Todo({ id, name, isDone }) {
         }
         handleClose()
         dispatch(addInput(''))
-        dispatch(isDoneTodo(id))
     }
     return (
         <div className={isDone ? `done` : `to_do`}>
@@ -42,7 +41,7 @@ function Todo({ id, name, isDone }) {
                 <Modal show={show} onHide={handleClose} animation={false}  >
                     <Modal.Body className="modal_update">
                         <form>
-                            <input type="text" className="update_input" onChange={handleChange} />
+                            <input type="text" className="update_input" onChange={handleChange} placeholder={name}/>
                             <button className="btn_update" onClick={update}> Update</button>
                         </form>
                     </Modal.Body>
