@@ -1,0 +1,60 @@
+.to_do{
+    display :flex;
+    justify-content: space-between;
+    background-color: rgb(248, 241, 241);
+    color: black;
+    padding : 10px 20px;
+    border-radius: 5px;
+    margin : 3% 0    
+}
+.done {
+    display :flex;
+    justify-content: space-between;
+    background-color: rgb(233, 173, 173);
+    opacity: 0.8;
+    color: black;
+    padding : 10px 20px;
+    border-radius: 5px;
+    margin : 3% 0    
+}
+.to_do > .todo_btn > button {
+    margin : 0 5px;
+    border :0;
+    padding :5px;
+    border-radius: 2px;
+    outline-style: none;
+} 
+.done > .todo_btn > button {
+    margin : 0 5px;
+    border :0;
+    padding :5px;
+    border-radius: 2px;
+    outline-style: none;
+} 
+.btn_edit{
+    background-color: teal;
+}
+.btn_delete {
+    background-color: tomato;
+}
+.btn_check{
+    background-color:lightslategray ;
+}
+.update_input {
+    width: 80%;
+    margin-right: 10px;
+    background-color:#8894aa ;
+    color:white;
+    padding :5px;
+    outline-style: none;
+}
+.modal_update {
+    background-color:#282c34 ;
+    border:0;
+}
+.btn_update{
+    background-color: teal;
+    padding : 5px 10px;
+    border :0;
+    outline-style: none;
+}
