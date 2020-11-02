@@ -17,3 +17,8 @@ body {
   display : flex ;
   
 }
+
+h1 {
+  color: rgb(5, 165, 165);
+  padding-bottom: 30px;
+}

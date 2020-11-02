@@ -31,10 +31,11 @@ function Todo({ id, name, isDone }) {
         }
         handleClose()
         dispatch(addInput(''))
+        dispatch(isDoneTodo(id))
     }
     return (
         <div className={isDone ? `done` : `to_do`}>
-            <h4>{name}</h4>
+            <h5>{name}</h5>
             <div className="todo_btn">
                 <button onClick={() => dispatch(isDoneTodo(id))} className="btn_check">{isDone ? <CheckBoxIcon /> : <CheckBoxOutlineBlankIcon />}</button>
                 <button className="btn_edit" onClick={handleShow}><EditIcon /></button>
